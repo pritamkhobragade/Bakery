@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SweetTreats Bakery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-pink" href="#">SweetTreats</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero bg-pink text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Fresh Bakes Every Day</h1>
+      <p class="lead">Delicious cakes, cupcakes, cookies and more made with love.</p>
+      <a href="#products" class="btn btn-light">Browse Products</a>
+    </div>
+  </section>
+
+  
+  <!-- Products Section -->
+  <section id="products" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Products</h2>
+
+      <!-- Product Filter Buttons -->
+<div class="text-center mb-4">
+  <button class="btn btn-outline-pink filter-btn" data-category="all">All</button>
+  <button class="btn btn-outline-pink filter-btn" data-category="cakes">Cakes</button>
+  <button class="btn btn-outline-pink filter-btn" data-category="cupcakes">Cupcakes</button>
+  <button class="btn btn-outline-pink filter-btn" data-category="cookies">Cookies</button>
+</div>
+
+      <div id="product-list" class="row g-4">
+        <!-- Dynamic items inserted by JS -->
+         <!-- <img src="${product.image}" data-lightbox="products" data-title="${product.name}" class="card-img-top" alt="${product.name}"> -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials Carousel -->
+  <section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">What Our Customers Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <blockquote class="blockquote">
+            <p>"The best cupcakes I've ever had! Will definitely order again."</p>
+            <footer class="blockquote-footer">Sarah L.</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>"Fresh, delicious, and beautifully decorated. Highly recommend."</p>
+            <footer class="blockquote-footer">Mark T.</footer>
+          </blockquote>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required />
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required />
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-pink" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-3 bg-dark text-white">
+    &copy; 2025 SweetTreats Bakery. All rights reserved.
+  </footer>
+
+  <button id="backToTop" class="btn btn-pink position-fixed" style="bottom: 20px; right: 20px; display: none;">
+  ↑
+</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+  <script src="script.js"></script>
+</body>
+</html>

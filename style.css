@@ -1,0 +1,41 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.text-pink {
+  color: #e83e8c;
+}
+
+.bg-pink {
+  background-color: #e83e8c;
+}
+
+.btn-pink {
+  background-color: #e83e8c;
+  color: white;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #d63384;
+}
+
+.hero {
+  background-image: url('https://source.unsplash.com/1600x600/?bakery,cakes');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(232, 62, 140, 0.6);
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
